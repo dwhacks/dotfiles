@@ -1,0 +1,32 @@
+# $HOME/.config/alacritty/alacritty.toml
+#dwhacks
+[window]
+
+opacity = 0.95
+
+#padding.x = 10
+#padding.y = 10
+
+decorations = "Full"
+decorations_theme_variant = "Light" # "Dark"
+
+[window.dimensions]
+columns = 140
+lines = 30
+
+[cursor]
+style = "Beam"
+
+[env]
+TERM = "xterm-256color"
+
+
+#[font]
+
+#normal.family = "Cascadia Code PL"
+#bold.family = "Cascadia Code PL"
+#italic.family = "Cascadia Code PL"
+#bold_italic.family = "Cascadia Code PL"
+
+#size = 15.0
+
