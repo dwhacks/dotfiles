@@ -74,6 +74,9 @@ alias tobash="sudo chsh $USER -s /bin/bash && echo 'Log out and log back in for 
 alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Log out and log back in for change to take effect.'"
 alias tofish="sudo chsh $USER -s /bin/fish && echo 'Log out and log back in for change to take effect.'"
 
+# dotfile Github
+alias config='/usr/bin/git --git-dir=/home/dwhacks/.cfg/ --work-tree=/home/dwhacks'
+
 ### RANDOM COLOR SCRIPT ###
 # Get this script from my GitLab: gitlab.com/dwt1/shell-color-scripts
 # Or install it from the Arch User Repository: shell-color-scripts
@@ -82,4 +85,3 @@ colorscript random
 # PS1='[\u@\h \W]\$ ' #commented out when using starship
 
 eval "$(starship init bash)"
-alias config='/usr/bin/git --git-dir=/home/dwhacks/.cfg/ --work-tree=/home/dwhacks'
