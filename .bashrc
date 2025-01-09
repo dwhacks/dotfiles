@@ -1,7 +1,13 @@
 #
 # ~/.bashrc
 # dwhacks 2025
-
+#    .___         ___ ___                __            
+#  __| _/_  _  __/   |   \_____    ____ |  | __  ______
+# / __ |\ \/ \/ /    ~    \__  \ _/ ___\|  |/ / /  ___/
+#/ /_/ | \     /\    Y    // __ \\  \___|    <  \___ \ 
+#\____ |  \/\_/  \___|_  /(____  /\___  >__|_ \/____  >
+#     \/               \/      \/     \/     \/     \/ 
+#
 ### EXPORT
 export TERM="xterm-256color"                      # getting proper colors
 export HISTCONTROL=ignoredups:erasedups           # no duplicate entries
@@ -73,7 +79,7 @@ alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Log out and log back in for ch
 alias tofish="sudo chsh $USER -s /bin/fish && echo 'Log out and log back in for change to take effect.'"
 
 # dotfile Github
-alias config='/usr/bin/git --git-dir=/home/dwhacks/.cfg/ --work-tree=/home/dwhacks'
+alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 
 ### RANDOM COLOR SCRIPT ###
 # Get this script from my GitLab: gitlab.com/dwt1/shell-color-scripts
