@@ -11,3 +11,5 @@ Example:
 ~ config commit -m "add readme" ##Commit to repo
 
 ~ config push ##Push the changed file(s)
+
+Quite the n00b
