@@ -1,3 +1,10 @@
+#    .___         ___ ___                __            
+#  __| _/_  _  __/   |   \_____    ____ |  | __  ______
+# / __ |\ \/ \/ /    ~    \__  \ _/ ___\|  |/ / /  ___/
+#/ /_/ | \     /\    Y    // __ \\  \___|    <  \___ \ 
+#\____ |  \/\_/  \___|_  /(____  /\___  >__|_ \/____  >
+#     \/               \/      \/     \/     \/     \/ 
+#Starship Config! Pew Pew Pew.....
 format = """
 [](#9A348E)\
 $os\
@@ -43,7 +50,7 @@ disabled = false
 # represents the current operating system
 [os]
 style = "bg:#9A348E"
-disabled = true # Disabled by default
+disabled = false # Disabled by default
 
 [directory]
 style = "bg:#DA627D"
