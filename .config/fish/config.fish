@@ -189,7 +189,12 @@ alias mocp="bash -c mocp"
 ### RANDOM COLOR SCRIPT ###
 # Get this script from my GitLab: gitlab.com/dwt1/shell-color-scripts
 # Or install it from the Arch User Repository: shell-color-scripts
-colorscript random
+#colorscript random
+
+# Only run in interactive mode
+if status is-interactive
+    colorscript random
+end
 
 ### SETTING THE STARSHIP PROMPT ###
 starship init fish | source

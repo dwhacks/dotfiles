@@ -87,3 +87,5 @@ colorscript random
 # PS1='[\u@\h \W]\$ ' #commented out when using starship
 
 eval "$(starship init bash)"
+
+export STM32_PRG_PATH=/home/dwhacks/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin
