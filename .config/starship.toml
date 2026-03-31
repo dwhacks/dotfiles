@@ -4,15 +4,9 @@
 #/ /_/ | \     /\    Y    // __ \\  \___|    <  \___ \ 
 #\____ |  \/\_/  \___|_  /(____  /\___  >__|_ \/____  >
 #     \/               \/      \/     \/     \/     \/ 
-# 2025
-#format = """
-#[╭─user───❯](bold blue) $username
-#[┣─system─❯](bold yellow) $hostname
-#[┣─project❯](bold red) $directory$rust$git_branch$git_state$git_status$package$golang$terraform$docker_context$python$docker_context$nodejs
-#[╰─cmd────❯](bold green)
-#"""
+# 2025 and beyond
 scan_timeout = 100
-command_timeout = 2000
+command_timeout = 500
 
 "$schema" = "https://starship.rs/config-schema.json"
 
@@ -84,6 +78,23 @@ min_time = 4
 show_milliseconds = false
 disabled = false
 style = "bold italic red"
+
+[battery]
+full_symbol = "󰁹"
+charging_symbol = "󰢝 "
+discharging_symbol = "󰂃"
+format = "[$symbol]($style) "
+disabled = false
+
+
+[[battery.display]]  # "bold red" style and discharging_symbol when capacity is between 0% and 10%
+threshold = 15
+style = "bold red"
+
+[[battery.display]]
+#format = "[$symbol]($style) "
+threshold = 100
+style = "bold purple"
 
 [aws]
 symbol = "  "
